@@ -1,0 +1,30 @@
+{
+  "name": "2017-dev",
+  "version": "1.0.0",
+  "author": "rudasn@gmail.com",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "imagemin": "^5.3.1",
+    "lodash": "^4.17.4",
+    "moment": "^2.18.1",
+    "react": "^15.5.4",
+    "react-bootstrap": "^0.31.0",
+    "react-dom": "^15.5.4",
+    "react-router-dom": "^4.1.1"
+  },
+  "devDependencies": {
+    "imagemin-cli": "^3.0.0",
+    "imagemin-jpegtran": "^5.0.2",
+    "imagemin-pngquant": "^5.0.0",
+    "react-scripts": "1.0.3"
+  },
+  "scripts": {
+    "build": "npm run fixtures && react-scripts build && npm run optimize",
+    "eject": "react-scripts eject",
+    "fixtures": "node bin/artist-fixtures",
+    "optimize": "node bin/imagemin.js",
+    "start": "npm run fixtures && react-scripts start",
+    "test": "react-scripts test --env=jsdom"
+  }
+}

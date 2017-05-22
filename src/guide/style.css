@@ -1,0 +1,6 @@
+.guide-foodDrinks img,
+.guide-environment img,
+.guide-camping img {
+    float: right;
+    margin: 0 0 16px 16px;
+}

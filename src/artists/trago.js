@@ -1,0 +1,20 @@
+import image from './images/02_TOM_TRAGO.png'
+
+export const name = 'TOM TRAGO (DJ SET)'
+
+export default `
+# ${ name }
+
+HOUSE
+
+<a href=http://tomtrago.com/music target=_blank>
+    http://tomtrago.com/music
+</a>
+
+An internationally renowned DJ, producer, live performer and label owner with three critically acclaimed albums to his name, the Dutchman divides his time between all-day studio sessions, DJ gigs and live shows all over the world, accentuated steady stream of musical collaborations. His trademark style blends the best of three decades of dance music – disco, boogie, synth funk, Detroit techno and more – with insatiable house rhythms and an intrinsic grasp of what makes dancefloors tick.
+
+Several of his tracks  (not least the rush-inducing ‘Use Me Again’ and 2015’s equally delicious ‘Hidden Heart Of Gold’ and ‘Brutal Romance’) sound like future classics. And it’s not surprising that Tom is a man in high demand. Aside from travelling the globe, he continues to develop his Voyage Direct label; an outlet for Dutch electronic music that’s more like an extended family of like-minded musicians than a regular imprint.
+
+![](${ image })
+`.trim()
+
