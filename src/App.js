@@ -1,3 +1,4 @@
+import Modal from 'react-bootstrap/lib/Modal'
 import React, { PureComponent } from 'react'
 import Sticky from 'react-stickynode';
 import { Switch, Route, } from 'react-router-dom'
@@ -36,16 +37,36 @@ class App extends PureComponent {
             </Sticky>
             <Switch>
                 <Route path="/guide/camping" render={
-                    () => this.renderPage(<Camping/>)
+                    () => <Modal show={ true } onHide={ this.goHome }>
+                            <Modal.Header closeButton>
+                                <Modal.Title>Camping</Modal.Title>
+                            </Modal.Header>
+                            <Modal.Body><Camping/></Modal.Body>
+                          </Modal>
                 }/>
                 <Route path="/guide/environment" render={
-                    () => this.renderPage(<Environment/>)
+                    () => <Modal show={ true } onHide={ this.goHome }>
+                            <Modal.Header closeButton>
+                                <Modal.Title>Environment, Health, &amp; Safety</Modal.Title>
+                            </Modal.Header>
+                            <Modal.Body><Environment/></Modal.Body>
+                          </Modal>
                 }/>
                 <Route path="/guide/menu" render={
-                    () => this.renderPage(<FoodMenu/>)
+                    () => <Modal show={ true } onHide={ this.goHome }>
+                            <Modal.Header closeButton>
+                                <Modal.Title>Food &amp; Drinks</Modal.Title>
+                            </Modal.Header>
+                            <Modal.Body><FoodMenu/></Modal.Body>
+                          </Modal>
                 }/>
                 <Route path="/guide/creative" render={
-                    () => this.renderPage(<Creative/>)
+                    () => <Modal show={ true } onHide={ this.goHome }>
+                            <Modal.Header closeButton>
+                                <Modal.Title>Artistic Explorations</Modal.Title>
+                            </Modal.Header>
+                            <Modal.Body><Creative/></Modal.Body>
+                          </Modal>
                 }/>
                 <Route path="/artist/:id" render={
                     (props) => <ArtistModal

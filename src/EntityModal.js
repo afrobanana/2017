@@ -1,8 +1,8 @@
-import React from 'react'
-import Modal from 'react-bootstrap/lib/Modal'
-import Grid from 'react-bootstrap/lib/Grid'
-import Row from 'react-bootstrap/lib/Row'
 import Col from 'react-bootstrap/lib/Col'
+import Grid from 'react-bootstrap/lib/Grid'
+import Modal from 'react-bootstrap/lib/Modal'
+import React from 'react'
+import Row from 'react-bootstrap/lib/Row'
 
 export default ({ title, body, previous, next, className, goBack }) => (
     <Modal show={ true } onHide={ goBack } className={ className }>

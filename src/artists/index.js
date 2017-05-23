@@ -82,12 +82,10 @@ export const ArtistLink = ({ id, name } = {}) => {
 }
 
 export const ArtistModal = ({ id, goBack } = {}) => {
-    console.debug('ArtistModal', artists, id)
     const artist = getArtistById(id)
     const { url, name, genres, text, photo } = artist
     const previous = getPreviousArtistId({ id })
     const next = getNextArtistId({ id })
-    console.debug('ArtistModal', previous, next)
 
     return (
         <EntityModal
