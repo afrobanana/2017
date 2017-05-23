@@ -1,16 +1,37 @@
 body {
-  margin: 0;
-  padding: 0;
+  background: linear-gradient( #6BCAF1, #F8D1D4 ) fixed;
   font-family: sans-serif;
+  margin: 0;
+  padding: 0 20px;
 }
 img {
-    max-width: 100%;
     height: auto;
-}
-a.active {
-    font-weight: bold;
-    color: #000;
+    max-width: 100%;
 }
 .disabled {
     opacity: 0.6;
+}
+.section-break {
+    display: block;
+    padding-bottom: 3em;
+}
+.sticky-inner-wrapper {
+    z-index: 1
+}
+
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 16px 0;
+}
+.box {
+    background-color: rgba(255,255,255,0.3);
+    box-sizing: border-box;
+    margin: 0 16px 16px 0;
+    max-width: 350px;
+    padding: 16px;
+}
+.box h2,
+.box h3 {
+    margin: 0;
 }

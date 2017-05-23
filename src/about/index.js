@@ -1,5 +1,6 @@
 import React from 'react'
 
+import './style.css'
 import logoImg from './images/abr-logo.png'
 import sponsorsImg from './images/sponsors.png'
 
@@ -9,7 +10,7 @@ export default () =>
         <div>
             <img src={ logoImg } alt="ABR stands for Alternative Brains Rule"/>
         </div>
-        <div>
+        <p className="sponsors">
             <img src={ sponsorsImg } alt="These are good people"/>
-        </div>
+        </p>
     </section>

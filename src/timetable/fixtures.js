@@ -232,7 +232,7 @@ export default [
         stage: HILL,
     },
     {
-        id: 'end',
+        id: 'END',
         date: new Date('07/08/2017 20:30'),
         stage: HILL,
     },

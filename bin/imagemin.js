@@ -12,5 +12,5 @@ imagemin([
         imageminPngquant({quality: '65-80'})
     ]
 }).then(files => {
-    console.log(`Optimized ${ files.length } images`);
+    console.log(`Optimized ${ files.length } images!`);
 });

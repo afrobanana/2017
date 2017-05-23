@@ -10,7 +10,7 @@ export default class TopNavBar extends PureComponent {
             <Navbar fluid collapseOnSelect className="navigation">
                 <Navbar.Header>
                     <Navbar.Brand>
-                        <NavLink to="/" exact={ true }>ABR <sup>2017</sup></NavLink>
+                        <NavLink to="/">ABR <sup>2017</sup></NavLink>
                     </Navbar.Brand>
                     <Navbar.Toggle/>
                 </Navbar.Header>
@@ -18,19 +18,16 @@ export default class TopNavBar extends PureComponent {
                 <Navbar.Collapse>
                     <ul className="nav navbar-nav">
                         <li>
-                            <NavLink to="/" exact={ true } activeClassName="active">Home</NavLink>
+                            <NavLink to="/timetable">Timetable</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/timetable" activeClassName="active">Timetable</NavLink>
+                            <NavLink to="/guide">Guide</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/guide" activeClassName="active">Guide</NavLink>
+                            <NavLink to="/location">Location</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/location" activeClassName="active">Location</NavLink>
-                        </li>
-                        <li>
-                            <NavLink to="/about" activeClassName="active">About</NavLink>
+                            <NavLink to="/about">About</NavLink>
                         </li>
                         <li>
                             <a href="http://google.com" target="_blank" rel="noopener noreferrer">Tickets</a>

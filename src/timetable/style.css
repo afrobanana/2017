@@ -1,0 +1,14 @@
+.timetable {
+
+}
+.timetable-day {
+    display: flex;
+    flex-wrap: wrap;
+}
+.timetable-day-heading {
+    width: 100%;
+}
+.timetable-stage {
+    margin: 0 16px 16px 0;
+    max-width: 350px;
+}

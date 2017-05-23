@@ -1,10 +1,11 @@
-import React, { PureComponent } from 'react'
-import { Link } from 'react-router-dom'
 import groupBy from 'lodash/groupBy'
 import moment from 'moment'
+import React, { PureComponent } from 'react'
+import { Link } from 'react-router-dom'
 
-import { names as artists } from '../artists/fixtures'
+import './style.css'
 import timetableSlots from './fixtures'
+import { names as artists } from '../artists/fixtures'
 
 const dateHeading = (date) =>
     (parseInt(moment(date).format('H'), 10) < 7 ?
@@ -31,8 +32,8 @@ class Timetable extends PureComponent {
     renderDay({ day, slots, key }) {
         const stages = slotsByStage(slots)
         return (
-            <div key={ key }>
-                <h2>{ day }</h2>
+            <div key={ key } className="box-container">
+                <h2 className="timetable-day-heading">{ day }</h2>
                 {
                     Object.keys(stages).map((stage, i) =>
                         this.renderStage({
@@ -49,7 +50,7 @@ class Timetable extends PureComponent {
     renderStage({ stage, slots, key }) {
 
         return (
-            <div key={ key }>
+            <div key={ key } className="box">
                 <h3>{ stage }</h3>
                 { slots.sort((a, b) => a.date < b.date ? -1 : 1).map((slot,i) =>
                     <p key={ i }>

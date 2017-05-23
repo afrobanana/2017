@@ -1,5 +1,8 @@
-import React, { Component } from 'react'
-import { Switch, Route } from 'react-router-dom'
+import Modal from 'react-bootstrap/lib/Modal'
+import React, { PureComponent } from 'react'
+import Sticky from 'react-stickynode';
+import { Router, Switch, Route, } from 'react-router-dom'
+import { withRouter } from 'react-router'
 
 import About from './about'
 import ArtistDetails from './artists'
@@ -11,36 +14,62 @@ import Guide from './guide'
 import Landing from './landing'
 import Nav from './nav'
 import Timetable from './timetable'
+import Newsletter from './newsletter'
 
-class App extends Component {
-  render() {
-    return (
-      <section className="abr">
-        <Nav/>
-        <Switch>
-            <Route path="/guide/camping" component={ Camping }/>
-            <Route path="/guide/environment" component={ Environment }/>
-            <Route path="/guide/menu" component={ FoodMenu }/>
-            <Route path="/artist/:id" render={
-                (props) => <ArtistDetails id={ props.match.params.id }/>
-            }/>
-            <Route render={ () =>
-                <div>
-                    <Landing/>
-                    <a name="timetable"></a>
-                    <Timetable/>
-                    <a name="guide"></a>
-                    <Guide/>
-                    <a name="location"></a>
-                    <Directions/>
-                    <a name="about"></a>
-                    <About/>
-                </div>
-            } />
-        </Switch>
-      </section>
-    );
-  }
+import { names as artistsNames } from './artists/fixtures'
+
+class App extends PureComponent {
+    renderPage(title, component) {
+        const goBack = this.props.history.goBack
+        return (
+            <Modal show={ true } onHide={ goBack }>
+                <Modal.Body>
+                    { component }
+                </Modal.Body>
+            </Modal>
+        )
+    }
+
+    render() {
+        console.log('render app', this.props)
+        return (
+          <section className="abr">
+            <Sticky>
+                <Nav/>
+            </Sticky>
+            <Switch>
+                <Route path="/guide/camping" render={
+                    () => this.renderPage('Camping', <Camping/>)
+                }/>
+                <Route path="/guide/environment" render={
+                    () => this.renderPage('Environment', <Environment/>)
+                }/>
+                <Route path="/guide/menu" render={
+                    () => this.renderPage('Food & Drinks', <FoodMenu/>)
+                }/>
+                <Route path="/guide/menu" render={
+                    () => this.renderPage('Food & Drinks', <FoodMenu/>)
+                }/>
+                <Route path="/artist/:id" render={
+                    (props) => this.renderPage(
+                        artistsNames[props.match.params.id],
+                        <ArtistDetails id={ props.match.params.id }/>
+                    )
+                }/>
+            </Switch>
+            <Landing/>
+            <a name="timetable" className="section-break"></a>
+            <Timetable/>
+            <a name="guide" className="section-break"></a>
+            <Guide/>
+            <a name="location" className="section-break"></a>
+            <Directions/>
+            <a name="about" className="section-break"></a>
+            <About/>
+            <Newsletter/>
+          </section>
+        );
+    }
 }
 
-export default App;
+export default withRouter(App);
