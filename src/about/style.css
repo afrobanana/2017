@@ -1,3 +1,7 @@
+.about .box:last-child {
+    text-align: right;
+    background-color: inherit;
+}
 .sponsors {
     text-align: center;
 }

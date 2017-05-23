@@ -16,7 +16,6 @@ import Guide from './guide'
 import Landing from './landing'
 import Nav from './nav'
 import Timetable from './timetable'
-import Newsletter from './newsletter'
 
 import { names as activities } from './activities/fixtures'
 import { names as artists } from './artists/fixtures'
@@ -75,7 +74,6 @@ class App extends PureComponent {
             <Directions/>
             <a name="about" className="section-break">&nbsp;</a>
             <About/>
-            <Newsletter/>
           </section>
         );
     }
