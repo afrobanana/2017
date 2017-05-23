@@ -1,19 +1,18 @@
 import groupBy from 'lodash/groupBy'
 import moment from 'moment'
 import React, { PureComponent } from 'react'
-import { Link } from 'react-router-dom'
 
 import './style.css'
-import timetableSlots from './fixtures'
-import { names as activities } from '../activities/fixtures'
-import { names as artists } from '../artists/fixtures'
+import timetableSlots, { ACTIVITIES, KIDS_ACTIVITIES } from './fixtures'
+import { ArtistLink, getArtistById } from '../artists'
+import { ActivityLink, getActivityById } from '../activities'
 
-const dateHeading = (date) =>
+export const dateHeading = (date) =>
     (parseInt(moment(date).format('H'), 10) < 7 ?
         moment(date).subtract(1, 'day') :
         moment(date)).format('dddd Do MMMM')
 
-const dateTime = (date) => moment(date).format('LT')
+export const dateTime = (date) => moment(date).format('HH:mm')
 
 const slotsByDate = (slots) => groupBy(slots, (s) => dateHeading(s.date))
 
@@ -49,27 +48,28 @@ class Timetable extends PureComponent {
     }
 
     renderStage({ stage, slots, key }) {
-
+        const isActivity = stage === ACTIVITIES.name ||
+                stage === KIDS_ACTIVITIES.name
+        const type = isActivity ? 'activity' : 'artist'
         return (
-            <div key={ key } className="box">
+            <div key={ key } className={ `box ${ type }` }>
                 <h3>{ stage }</h3>
                 {
                     slots.sort((a, b) =>
                         a.date < b.date ? -1 : 1
                     ).map(({ id, date }, i) => {
-                        const type = artists[id] ? 'artist' : 'activity'
-                        const name = artists[id] || activities[id]
-                        return <p key={ i }>
-                            {
-                                name ?
-                                    <Link to={ `/${ type }/${ id }` }>
-                                        { name }
-                                    </Link> :
-                                    <span className="disabled">{ id }</span>
-                            }
-                            &nbsp;
-                            { dateTime(date) }
-                        </p>
+                        const entry = isActivity ? getActivityById(id) : getArtistById(id)
+                        return (
+                            <p key={ i } className="entry">
+                                <em className="time">{ dateTime(date) }</em>
+                                <br/>
+                                {
+                                    ActivityLink(entry) ||
+                                        ArtistLink(entry) ||
+                                        <span className="disabled">{ id }</span>
+                                }
+                            </p>
+                        )
                     })
                 }
             </div>

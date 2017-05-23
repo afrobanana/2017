@@ -4,3 +4,11 @@
 .directions-drive .box {
 
 }
+.directions iframe {
+    pointer-events: none;
+}
+
+.directions iframe:active,
+.directions iframe:focus {
+    pointer-events: auto;
+}

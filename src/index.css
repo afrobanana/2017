@@ -11,7 +11,7 @@ img {
 dd + dt {
   margin-top: 16px;
 }
-dt, h1, h2, h3 {
+dt, h1, h2, h3, h4 {
   color: rgb(68, 79, 161);
   text-transform: uppercase;
 }
@@ -47,6 +47,21 @@ dl:last-child, p:last-child {
 }
 .box h2,
 .box h3 {
-    margin: 0 0 16px 0;
     text-shadow: 0 0 2px #fff;
+    background-color: rgba(255,255,255,0.5);
+    margin: -16px -16px 16px -16px;
+    padding: 10px 16px;
+    text-align: center;
+}
+.modal-title {
+    font-weight: 600;
+    margin-top: 0;
+}
+.modal-title em {
+    bottom: 0.3em;
+    display: inline-block;
+    font-size: 0.6em;
+    font-style: normal;
+    font-weight: normal;
+    position: relative;
 }

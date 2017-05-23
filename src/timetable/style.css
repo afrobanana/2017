@@ -1,14 +1,16 @@
 .timetable {
 
 }
-.timetable-day {
-    display: flex;
-    flex-wrap: wrap;
-}
 .timetable-day-heading {
     width: 100%;
 }
-.timetable-stage {
-    margin: 0 16px 16px 0;
-    max-width: 350px;
+.timetable .box.activity h3 {
+    color: #e785b7;
+}
+.timetable .time {
+    color: #fff;
+    font-style: normal;
+}
+.timetable .entry a {
+    color: #000;
 }

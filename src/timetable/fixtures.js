@@ -1,31 +1,31 @@
-const SQUARE = {
+export const SQUARE = {
     name: 'ABR Square',
     displayOrder: 0
 }
-const WOODS = {
+export const WOODS = {
     name: 'In the woods',
     displayOrder: 1
 }
-const BOX = {
+export const BOX = {
     name: 'Out of box',
     displayOrder: 2
 }
-const HILL = {
+export const HILL = {
     name: 'Up the hill',
     displayOrder: 3
 }
-const ACTIVITIES = {
+export const ACTIVITIES = {
     name: 'Activities',
     displayOrder: 4
 }
-const KIDS_ACTIVITIES = {
+export const KIDS_ACTIVITIES = {
     name: 'Kids Activities',
     displayOrder: 5
 }
 
 export default [
     {
-        id: 'abrRadio',
+        id: 'ABR Radio',
         date: new Date('07/07/2017 14:00'),
         stage: SQUARE,
     },

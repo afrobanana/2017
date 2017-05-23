@@ -1,12 +1,9 @@
-import Modal from 'react-bootstrap/lib/Modal'
 import React, { PureComponent } from 'react'
 import Sticky from 'react-stickynode';
 import { Switch, Route, } from 'react-router-dom'
 import { withRouter } from 'react-router'
 
 import About from './about'
-import ArtistDetails from './artists'
-import ActivityDetails from './activities'
 import Camping from './guide/camping'
 import Creative from './guide/creative'
 import Directions from './directions'
@@ -15,19 +12,20 @@ import FoodMenu from './guide/menu'
 import Guide from './guide'
 import Landing from './landing'
 import Nav from './nav'
-import Timetable from './timetable'
 import Tickets from './tickets'
+import Timetable from './timetable'
+import { ArtistModal } from './artists'
+import { ActivityModal } from './activities'
 
 class App extends PureComponent {
-    renderPage(component) {
-        const goBack = this.props.history.goBack
-        return (
-            <Modal show={ true } onHide={ goBack }>
-                <Modal.Body>
-                    { component }
-                </Modal.Body>
-            </Modal>
-        )
+    constructor(props) {
+        super(props)
+        this.goHome = this.goHome.bind(this)
+    }
+
+    goHome() {
+        const history = this.props.history
+        history.push('/')
     }
 
     render() {
@@ -50,16 +48,16 @@ class App extends PureComponent {
                     () => this.renderPage(<Creative/>)
                 }/>
                 <Route path="/artist/:id" render={
-                    (props) => {
-                        const id = props.match.params.id
-                        return this.renderPage(<ArtistDetails id={ id }/>)
-                    }
+                    (props) => <ArtistModal
+                                    id={ props.match.params.id }
+                                    goBack={ this.goHome }
+                                    />
                 }/>
                 <Route path="/activity/:id" render={
-                    (props) => {
-                        const id = props.match.params.id
-                        return this.renderPage(<ActivityDetails id={ id }/>)
-                    }
+                    (props) => <ActivityModal
+                                    id={ props.match.params.id }
+                                    goBack={ this.goHome }
+                                    />
                 }/>
             </Switch>
             <Landing/>

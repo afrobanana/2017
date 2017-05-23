@@ -1,6 +1,5 @@
 import React, { PureComponent } from 'react'
 import Navbar from 'react-bootstrap/lib/Navbar'
-import { NavLink, } from 'react-router-dom'
 
 import './style.css'
 import FB from '../images/fb.svg'
@@ -13,7 +12,7 @@ export default class TopNavBar extends PureComponent {
             <Navbar fluid collapseOnSelect className="navigation">
                 <Navbar.Header>
                     <Navbar.Brand>
-                        <NavLink to="/">ABR <sup>2017</sup></NavLink>
+                        <a href="/">ABR <sup>2017</sup></a>
                     </Navbar.Brand>
                     <Navbar.Toggle/>
                 </Navbar.Header>
@@ -21,16 +20,16 @@ export default class TopNavBar extends PureComponent {
                 <Navbar.Collapse>
                     <ul className="nav navbar-nav">
                         <li>
-                            <NavLink to="/timetable">Timetable</NavLink>
+                            <a href="#timetable">Timetable</a>
                         </li>
                         <li>
-                            <NavLink to="/guide">Guide</NavLink>
+                            <a href="#guide">Guide</a>
                         </li>
                         <li>
-                            <NavLink to="/location">Location</NavLink>
+                            <a href="#location">Location</a>
                         </li>
                         <li>
-                            <NavLink to="/about">About</NavLink>
+                            <a href="#about">About</a>
                         </li>
                         <li className="tickets">
                             <a href="http://abr.ticket.com.cy/event/page/1"
