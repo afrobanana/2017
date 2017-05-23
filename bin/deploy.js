@@ -1,4 +1,14 @@
 var ghpages = require('gh-pages');
-var path = require('path');
 
-ghpages.publish('.gh-pages', function(err) {});
+console.log('Deploying to Github...')
+
+ghpages.publish('.', {
+    src: 'build/**'
+}, function(err) {
+    if (err) {
+        console.log(err.message || err)
+    }
+    else {
+        console.log('Deployed!')
+    }
+});
