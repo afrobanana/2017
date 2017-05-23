@@ -11,7 +11,7 @@ export default class Directions extends PureComponent {
             <section className="directions">
                 <h1>Getting Here</h1>
                 <Thumbnail>
-                    <a href={ `${ directionsImg }` } target="_blank">
+                    <a href={ `${ directionsImg }` } target="_blank" rel="noopener noreferrer">
                         <img src={ directionsImg } alt="directions"/>
                     </a>
                 </Thumbnail>

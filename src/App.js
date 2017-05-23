@@ -1,7 +1,7 @@
 import Modal from 'react-bootstrap/lib/Modal'
 import React, { PureComponent } from 'react'
 import Sticky from 'react-stickynode';
-import { Router, Switch, Route, } from 'react-router-dom'
+import { Switch, Route, } from 'react-router-dom'
 import { withRouter } from 'react-router'
 
 import About from './about'
@@ -58,13 +58,13 @@ class App extends PureComponent {
                 }/>
             </Switch>
             <Landing/>
-            <a name="timetable" className="section-break"></a>
+            <a name="timetable" className="section-break">&nbsp;</a>
             <Timetable/>
-            <a name="guide" className="section-break"></a>
+            <a name="guide" className="section-break">&nbsp;</a>
             <Guide/>
-            <a name="location" className="section-break"></a>
+            <a name="location" className="section-break">&nbsp;</a>
             <Directions/>
-            <a name="about" className="section-break"></a>
+            <a name="about" className="section-break">&nbsp;</a>
             <About/>
             <Newsletter/>
           </section>

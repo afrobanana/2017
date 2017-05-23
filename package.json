@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "author": "rudasn@gmail.com",
   "private": true,
+  "homepage": "http://afrobanana.github.io/2017-dev",
   "dependencies": {
     "bootstrap": "^3.3.7",
-    "imagemin": "^5.3.1",
     "lodash": "^4.17.4",
     "moment": "^2.18.1",
     "react": "^15.5.4",
@@ -16,6 +16,7 @@
   },
   "devDependencies": {
     "gh-pages": "^1.0.0",
+    "imagemin": "^5.3.1",
     "imagemin-cli": "^3.0.0",
     "imagemin-jpegtran": "^5.0.2",
     "imagemin-pngquant": "^5.0.0",
@@ -23,10 +24,11 @@
   },
   "scripts": {
     "build": "npm run fixtures && react-scripts build && npm run optimize",
-    "deploy": "npm run build && node bin/deploy",
+    "deploy": "npm run build && npm run push",
     "eject": "react-scripts eject",
-    "fixtures": "node bin/artist-fixtures",
-    "optimize": "node bin/imagemin.js",
+    "fixtures": "node bin/fixtures.js",
+    "optimize": "node bin/optimize.js",
+    "push": "NODE_DEBUG=gh-pages node bin/deploy",
     "start": "npm run fixtures && react-scripts start",
     "test": "react-scripts test --env=jsdom"
   }

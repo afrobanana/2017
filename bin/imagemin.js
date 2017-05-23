@@ -8,8 +8,13 @@ imagemin([
     'build/static/media/*.{jpg,png}'
 ], 'build/static/media', {
     plugins: [
-        imageminJpegtran(),
-        imageminPngquant({quality: '65-80'})
+        imageminJpegtran({
+            progressive: true,
+        }),
+        imageminPngquant({
+            // quality: '65-80'
+            verbose: true,
+        })
     ]
 }).then(files => {
     console.log(`Optimized ${ files.length } images!`);
