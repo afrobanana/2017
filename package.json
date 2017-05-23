@@ -28,7 +28,9 @@
     "eject": "react-scripts eject",
     "fixtures": "node bin/fixtures.js",
     "optimize": "node bin/optimize.js",
-    "push": "NODE_DEBUG=gh-pages node bin/deploy",
+    "post-deploy": "rm -rf .gh-pages",
+    "pre-deploy": "mkdir .gh-pages && cp -r build/ .gh-pages/",
+    "push": "npm run pre-deploy && NODE_DEBUG=gh-pages node bin/deploy && npm run post-deploy",
     "start": "npm run fixtures && react-scripts start",
     "test": "react-scripts test --env=jsdom"
   }
