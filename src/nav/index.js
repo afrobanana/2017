@@ -34,7 +34,7 @@ export default class TopNavBar extends PureComponent {
                         </li>
                         <li className="tickets">
                             <a href="http://abr.ticket.com.cy/event/page/1"
-                               className="btn btn-danger"
+                               className="btn"
                                target="_blank"
                                rel="noopener noreferrer">
                                Tickets

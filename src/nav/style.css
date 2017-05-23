@@ -11,6 +11,8 @@
 .navigation .tickets a {
     padding: 5px 12px;
     margin: 8px;
+    background-color: #e785b7;
+    border-color: #e785b7;
 }
 .navigation .social {
     float: right;

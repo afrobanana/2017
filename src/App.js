@@ -16,6 +16,7 @@ import Guide from './guide'
 import Landing from './landing'
 import Nav from './nav'
 import Timetable from './timetable'
+import Tickets from './tickets'
 
 class App extends PureComponent {
     renderPage(component) {
@@ -70,6 +71,7 @@ class App extends PureComponent {
             <Directions/>
             <a name="about" className="section-break">&nbsp;</a>
             <About/>
+            <Tickets/>
           </section>
         );
     }
