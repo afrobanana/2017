@@ -8,6 +8,7 @@ import About from './about'
 import ArtistDetails from './artists'
 import ActivityDetails from './activities'
 import Camping from './guide/camping'
+import Creative from './guide/creative'
 import Directions from './directions'
 import Environment from './guide/environment'
 import FoodMenu from './guide/menu'
@@ -21,7 +22,7 @@ import { names as activities } from './activities/fixtures'
 import { names as artists } from './artists/fixtures'
 
 class App extends PureComponent {
-    renderPage(title, component) {
+    renderPage(component) {
         const goBack = this.props.history.goBack
         return (
             <Modal show={ true } onHide={ goBack }>
@@ -41,35 +42,27 @@ class App extends PureComponent {
             </Sticky>
             <Switch>
                 <Route path="/guide/camping" render={
-                    () => this.renderPage('Camping', <Camping/>)
+                    () => this.renderPage(<Camping/>)
                 }/>
                 <Route path="/guide/environment" render={
-                    () => this.renderPage('Environment', <Environment/>)
+                    () => this.renderPage(<Environment/>)
                 }/>
                 <Route path="/guide/menu" render={
-                    () => this.renderPage('Food & Drinks', <FoodMenu/>)
+                    () => this.renderPage(<FoodMenu/>)
                 }/>
-                <Route path="/guide/menu" render={
-                    () => this.renderPage('Food & Drinks', <FoodMenu/>)
+                <Route path="/guide/creative" render={
+                    () => this.renderPage(<Creative/>)
                 }/>
                 <Route path="/artist/:id" render={
                     (props) => {
                         const id = props.match.params.id
-                        const artistName = artists[id]
-                        return this.renderPage(
-                            artistName,
-                            <ArtistDetails id={ id }/>
-                        )
+                        return this.renderPage(<ArtistDetails id={ id }/>)
                     }
                 }/>
                 <Route path="/activity/:id" render={
                     (props) => {
                         const id = props.match.params.id
-                        const activityName = activities[id]
-                        return this.renderPage(
-                            activityName,
-                            <ActivityDetails id={ id }/>
-                        )
+                        return this.renderPage(<ActivityDetails id={ id }/>)
                     }
                 }/>
             </Switch>

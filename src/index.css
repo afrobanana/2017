@@ -8,6 +8,19 @@ img {
     height: auto;
     max-width: 100%;
 }
+dd + dt {
+  margin-top: 16px;
+}
+dt, h1, h2, h3 {
+  color: rgb(68, 79, 161);
+  text-transform: uppercase;
+}
+strong {
+  color: rgb(68, 79, 161);
+}
+dl:last-child, p:last-child {
+  margin-bottom: 0;
+}
 .disabled {
     opacity: 0.6;
 }
@@ -28,10 +41,12 @@ img {
     background-color: rgba(255,255,255,0.3);
     box-sizing: border-box;
     margin: 0 16px 16px 0;
-    max-width: 350px;
+    width: 380px;
     padding: 16px;
+    position: relative;
 }
 .box h2,
 .box h3 {
-    margin: 0;
+    margin: 0 0 16px 0;
+    text-shadow: 0 0 2px #fff;
 }
