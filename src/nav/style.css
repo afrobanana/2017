@@ -1,11 +1,20 @@
 .navigation.navbar {
-    margin: 0 -20px;
-    /*background-color: #6BCAF1;*/
-    /*background-color: #000;*/
     background-color: rgb(68, 79, 161);
-    border: none;
     border-radius: 0;
+    border: none;
+    margin: 0 -20px;
+    text-transform: uppercase;
 }
 .navigation.navbar a {
     color: #fff !important;
+}
+.navigation .tickets a {
+    padding: 5px 12px;
+    margin: 8px;
+}
+.navigation .social {
+    float: right;
+}
+.navigation .social a {
+    padding: 10px 20px;
 }
