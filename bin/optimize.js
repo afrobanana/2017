@@ -9,11 +9,11 @@ imagemin([
 ], 'build/static/media', {
     plugins: [
         imageminJpegtran({
-            progressive: true
+            progressive: true,
         }),
         imageminPngquant({
-            // quality: '90',
-            verbose: true
+            quality: '65-100',
+            verbose: true,
         })
     ]
 }).then(files => {
