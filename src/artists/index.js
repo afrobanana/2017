@@ -78,7 +78,7 @@ export const ArtistExternalLink = ({ url } = {}) => {
 export const ArtistLink = ({ id, name } = {}) => {
     return getArtistById(id) ?
         <Link to={ `/artist/${ id }` }>{ ArtistName({ name }) } </Link> :
-        'fuck'
+        null
 }
 
 export const ArtistModal = ({ id, goBack } = {}) => {
