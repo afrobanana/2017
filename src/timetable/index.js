@@ -11,7 +11,7 @@ import { names as artists } from '../artists/fixtures'
 const dateHeading = (date) =>
     (parseInt(moment(date).format('H'), 10) < 7 ?
         moment(date).subtract(1, 'day') :
-        moment(date)).format('dddd Do MMM')
+        moment(date)).format('dddd Do MMMM')
 
 const dateTime = (date) => moment(date).format('LT')
 
@@ -84,9 +84,8 @@ class Timetable extends PureComponent {
                 <h1>Timetable</h1>
                 <p>
                     <strong>Gates open:</strong> Friday 7<sup>th</sup> at 14:00
-                </p>
-                <p>
-                    <strong>Gates close:</strong> Friday 9<sup>th</sup> at 23:00
+                    &nbsp;
+                    <strong>Gates close:</strong> Sunday 9<sup>th</sup> at 23:00
                 </p>
                 { this.renderDays() }
             </section>
