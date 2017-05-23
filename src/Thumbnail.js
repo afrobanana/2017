@@ -5,7 +5,6 @@ const THUMBNAIL_STYLE = {
     overflow: 'hidden',
     height: '300px',
     lineHeight: 1,
-    border: '1px solid #cecece',
 }
 const THUMBNAIL_IMAGE_STYLE = {
     left: '50%',

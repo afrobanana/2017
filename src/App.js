@@ -17,9 +17,6 @@ import Landing from './landing'
 import Nav from './nav'
 import Timetable from './timetable'
 
-import { names as activities } from './activities/fixtures'
-import { names as artists } from './artists/fixtures'
-
 class App extends PureComponent {
     renderPage(component) {
         const goBack = this.props.history.goBack
@@ -33,7 +30,6 @@ class App extends PureComponent {
     }
 
     render() {
-        console.log('render app', this.props)
         return (
           <section className="abr">
             <Sticky>

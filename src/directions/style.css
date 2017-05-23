@@ -1,8 +1,6 @@
-.directions-means {
-    display: flex;
-    flex-wrap: wrap;
+.directions-drive ol {
+    padding: 0 0 0 1em;
 }
-.directions-item {
-    margin: 0 16px 16px 0;
-    max-width: 350px;
+.directions-drive .box {
+    width: 310px;
 }

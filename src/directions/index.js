@@ -10,13 +10,12 @@ export default class Directions extends PureComponent {
         return (
             <section className="directions">
                 <h1>Getting Here</h1>
-                <Thumbnail>
-                    <a href={ `${ directionsImg }` } target="_blank" rel="noopener noreferrer">
-                        <img src={ directionsImg } alt="directions"/>
-                    </a>
-                </Thumbnail>
-
                 <div className="box-container">
+                    <div className="box">
+                        <h2>CAR SHARING</h2>
+                        <p>Why not get your friends together to make the most of the drive down to the festival? Sharing a ride is fun, will save you petrol money, it’s environmentally friendly, and it will be easier for everyone to park once on site!</p>
+                        <p>Keep an eye out for the ‘car sharing’ post on the festival’s Facebook and Instagram pages where you can offer or request rides.</p>
+                    </div>
                     <div className="box">
                         <h2>PARKING</h2>
                         <p>Following the success of the festival bus last year, our lovely bus drivers will be ready to take you right up to the festival site! </p>
@@ -29,10 +28,61 @@ export default class Directions extends PureComponent {
                         <p>There will be a frequent service to ensure you don’t have to wait long and that your journey is quick and comfortable.</p>
                         <p>Bus stops will be clearly marked at both the parking area and festival entrance/exit.</p>
                     </div>
+                </div>
+                <Thumbnail width="960px">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.1413958011167!2d33.400298315926015!3d34.90290098038319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14de04a7d9365cb9%3A0xbd7734f7a94bf975!2sThe+Afro+Banana+Republic+Festival!5e0!3m2!1sen!2sus!4v1495542562564"
+                        width="960"
+                        height="420"
+                        frameBorder="0"
+                        title="Google Map"
+                        allowFullScreen/>
+                </Thumbnail>
+                <div className="directions-drive box-container">
                     <div className="box">
-                        <h2>CAR SHARING</h2>
-                        <p>Why not get your friends together to make the most of the drive down to the festival? Sharing a ride is fun, will save you petrol money, it’s environmentally friendly, and it will be easier for everyone to park once on site!</p>
-                        <p>Keep an eye out for the ‘car sharing’ post on the festival’s Facebook and Instagram pages where you can offer or request rides.</p>
+                        <h3>From Nicosia</h3>
+                        <ol>
+                            <li>Take the exit for <strong>Kornos, Stavrovouni</strong>.</li>
+                            <li>At the end of the road turn left.</li>
+                            <li>At the end of the road turn right.</li>
+                            <li>
+                                Keep going straight for about 2 km, until you reach the Festival Checkpoint.
+                                <br/>
+                                Crew assistants and signage will direct you to the Parking Area, Campers Drop-off or Campers Parking.
+                            </li>
+                        </ol>
+                    </div>
+                    <div className="box">
+                        <h3>From Limassol</h3>
+                        <ol>
+                            <li>Take the exit for <strong>Kornos, Stavrovouni</strong>.</li>
+                            <li>At the end of the road turn right.</li>
+                            <li>At the end of the road turn right (again).</li>
+                            <li>
+                                Keep going straight for about 2 km, until you reach the Festival Checkpoint.
+                                <br/>
+                                Crew assistants and signage will direct you to the Parking Area, Campers Drop-off or Campers Parking.
+                            </li>
+                        </ol>
+                    </div>
+                    <div className="box">
+                        <h3>From Larnaca</h3>
+                        <ol>
+                            <li>Take the exit from <strong>Kalo Chorio</strong> roundabout to Kalo Chorio.</li>
+                            <li>Keep going until you find the roundabout of Mosfiloti.</li>
+                            <li>
+                                Turn left and follow the old Nicosia-Limassol road towards Limassol for 3 km, until you reach the Festival Checkpoint
+                                <br/>
+                                Crew assistants and signage will direct you to the Parking Area, Campers Drop-off or Campers Parking.
+                            </li>
+                        </ol>
+                    </div>
+                    <div className="box">
+                        <Thumbnail>
+                            <a href={ `${ directionsImg }` } target="_blank" rel="noopener noreferrer">
+                                <img src={ directionsImg } alt="directions"/>
+                            </a>
+                        </Thumbnail>
                     </div>
                 </div>
             </section>
