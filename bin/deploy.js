@@ -2,11 +2,15 @@ var ghpages = require('gh-pages');
 
 console.log('Deploying to Github...')
 
-ghpages.publish('.', {
-    src: 'build/**'
+ghpages.publish('build', {
+    src: '**/*'
 }, function(err) {
     if (err) {
         console.log(err.message || err)
+        console.log('---')
+        console.log('You are still in gh-pages branch and need to checkout master!')
+        console.log('git checkout master')
+        console.log('---')
     }
     else {
         console.log('Deployed!')

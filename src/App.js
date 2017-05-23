@@ -6,6 +6,7 @@ import { withRouter } from 'react-router'
 
 import About from './about'
 import ArtistDetails from './artists'
+import ActivityDetails from './activities'
 import Camping from './guide/camping'
 import Directions from './directions'
 import Environment from './guide/environment'
@@ -16,7 +17,8 @@ import Nav from './nav'
 import Timetable from './timetable'
 import Newsletter from './newsletter'
 
-import { names as artistsNames } from './artists/fixtures'
+import { names as activities } from './activities/fixtures'
+import { names as artists } from './artists/fixtures'
 
 class App extends PureComponent {
     renderPage(title, component) {
@@ -51,10 +53,24 @@ class App extends PureComponent {
                     () => this.renderPage('Food & Drinks', <FoodMenu/>)
                 }/>
                 <Route path="/artist/:id" render={
-                    (props) => this.renderPage(
-                        artistsNames[props.match.params.id],
-                        <ArtistDetails id={ props.match.params.id }/>
-                    )
+                    (props) => {
+                        const id = props.match.params.id
+                        const artistName = artists[id]
+                        return this.renderPage(
+                            artistName,
+                            <ArtistDetails id={ id }/>
+                        )
+                    }
+                }/>
+                <Route path="/activity/:id" render={
+                    (props) => {
+                        const id = props.match.params.id
+                        const activityName = activities[id]
+                        return this.renderPage(
+                            activityName,
+                            <ActivityDetails id={ id }/>
+                        )
+                    }
                 }/>
             </Switch>
             <Landing/>

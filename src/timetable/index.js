@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 
 import './style.css'
 import timetableSlots from './fixtures'
+import { names as activities } from '../activities/fixtures'
 import { names as artists } from '../artists/fixtures'
 
 const dateHeading = (date) =>
@@ -52,19 +53,25 @@ class Timetable extends PureComponent {
         return (
             <div key={ key } className="box">
                 <h3>{ stage }</h3>
-                { slots.sort((a, b) => a.date < b.date ? -1 : 1).map((slot,i) =>
-                    <p key={ i }>
-                        {
-                            artists[slot.id] ?
-                                <Link to={ `/artist/${ slot.id }` }>
-                                    { artists[slot.id] }
-                                </Link> :
-                                <span className="disabled">{ slot.id }</span>
-                        }
-                        &nbsp;
-                        { dateTime(slot.date) }
-                    </p>
-                ) }
+                {
+                    slots.sort((a, b) =>
+                        a.date < b.date ? -1 : 1
+                    ).map(({ id, date }, i) => {
+                        const type = artists[id] ? 'artist' : 'activity'
+                        const name = artists[id] || activities[id]
+                        return <p key={ i }>
+                            {
+                                name ?
+                                    <Link to={ `/${ type }/${ id }` }>
+                                        { name }
+                                    </Link> :
+                                    <span className="disabled">{ id }</span>
+                            }
+                            &nbsp;
+                            { dateTime(date) }
+                        </p>
+                    })
+                }
             </div>
         )
     }

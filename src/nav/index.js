@@ -30,7 +30,7 @@ export default class TopNavBar extends PureComponent {
                             <NavLink to="/about">About</NavLink>
                         </li>
                         <li>
-                            <a href="http://google.com" target="_blank" rel="noopener noreferrer">Tickets</a>
+                            <a href="http://abr.ticket.com.cy/event/page/1" target="_blank" rel="noopener noreferrer">Tickets</a>
                         </li>
                     </ul>
                 </Navbar.Collapse>

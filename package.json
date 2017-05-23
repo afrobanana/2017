@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "author": "rudasn@gmail.com",
   "private": true,
-  "homepage": "http://afrobanana.github.io/2017-dev",
+  "homepage": "http://2017.afrobananarepublic.com",
   "dependencies": {
     "bootstrap": "^3.3.7",
     "lodash": "^4.17.4",
@@ -11,6 +11,7 @@
     "react": "^15.5.4",
     "react-bootstrap": "^0.31.0",
     "react-dom": "^15.5.4",
+    "react-markdown": "^2.5.0",
     "react-router-dom": "^4.1.1",
     "react-stickynode": "^1.3.1"
   },
@@ -18,7 +19,7 @@
     "gh-pages": "^1.0.0",
     "imagemin": "^5.3.1",
     "imagemin-cli": "^3.0.0",
-    "imagemin-jpegtran": "^5.0.2",
+    "imagemin-jpeg-recompress": "^5.1.0",
     "imagemin-pngquant": "^5.0.0",
     "react-scripts": "1.0.3"
   },

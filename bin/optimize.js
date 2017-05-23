@@ -1,5 +1,5 @@
 const imagemin = require('imagemin');
-const imageminJpegtran = require('imagemin-jpegtran');
+const imageminJpegtran = require('imagemin-jpeg-recompress');
 const imageminPngquant = require('imagemin-pngquant');
 
 console.log('Optimizing...');
@@ -9,6 +9,8 @@ imagemin([
 ], 'build/static/media', {
     plugins: [
         imageminJpegtran({
+            min: 60,
+            max: 80,
             progressive: true,
         }),
         imageminPngquant({

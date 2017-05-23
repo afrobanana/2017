@@ -113,7 +113,7 @@ export default [
     },
 
     {
-        id: 'meditation',
+        id: 'meditation-in-motion',
         date: new Date('07/07/2017 18:30'),
         stage: ACTIVITIES,
     },

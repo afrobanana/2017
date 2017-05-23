@@ -1,0 +1,6 @@
+.activity h1 {
+    margin-top: 0;
+}
+.activity p + div {
+    margin-bottom: 10px;
+}

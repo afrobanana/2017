@@ -29,5 +29,8 @@ export default () =>
 
             <dt>CrepaLand</dt>
             <dd>All about pancakes, just pick the filling of your choice and indulge!</dd>
+
+            <dt>Momo’s</dt>
+            <dd>Bringing you a real taste of South Asia, tuck into a traditional delicacy from Nepal and Tibet! Ask for your steamed dumplings filled with delicious pork or vegetables, both cooked on site in a momo-making 'mucktoo'! </dd>
         </dl>
     </section>
