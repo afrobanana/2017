@@ -1,9 +1,9 @@
 import React, { PureComponent } from 'react'
 
 import Thumbnail from '../Thumbnail'
-
 import './style.css'
 import directionsImg from './images/directions.png'
+import mapImg from './images/google-map.png'
 
 export default class Directions extends PureComponent {
 
@@ -30,22 +30,14 @@ export default class Directions extends PureComponent {
                         <p>Bus stops will be clearly marked at both the parking area and festival entrance/exit.</p>
                     </div>
                 </div>
-                <Thumbnail width="960px">
                     <a
                         href="https://www.google.com/maps/place/The+Afro+Banana+Republic+Festival/@34.87393,33.366545,11z/data=!4m5!3m4!1s0x0:0xbd7734f7a94bf975!8m2!3d34.902901!4d33.402487?hl=en-GB"
                         target="_blank"
                         rel="noopener noreferrer"
                         style={{ display: 'inline-block' }}
                         >
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.1413958011167!2d33.400298315926015!3d34.90290098038319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14de04a7d9365cb9%3A0xbd7734f7a94bf975!2sThe+Afro+Banana+Republic+Festival!5e0!3m2!1sen!2sus!4v1495542562564"
-                            width="960"
-                            height="420"
-                            frameBorder="0"
-                            title="Google Map"
-                            allowFullScreen/>
+                        <img width="1250px" src={ mapImg } alt="Google Map"/>
                     </a>
-                </Thumbnail>
                 <div className="directions-drive box-container">
                     <div className="box">
                         <h3>From Nicosia</h3>
