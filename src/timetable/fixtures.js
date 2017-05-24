@@ -7,7 +7,7 @@ export const WOODS = {
     displayOrder: 1
 }
 export const BOX = {
-    name: 'Out of box',
+    name: 'Out of the box',
     displayOrder: 2
 }
 export const HILL = {
@@ -88,22 +88,22 @@ export default [
 
     {
         id: 'kineza',
-        date: new Date('07/07/2017 22:00'),
+        date: new Date('07/07/2017 21:00'),
         stage: BOX,
     },
     {
         id: 'danlo',
-        date: new Date('07/08/2017 00:00'),
+        date: new Date('07/08/2017 23:00'),
         stage: BOX,
     },
     {
         id: 'trago',
-        date: new Date('07/08/2017 02:00'),
+        date: new Date('07/08/2017 01:00'),
         stage: BOX,
     },
     {
         id: 'cusack',
-        date: new Date('07/08/2017 04:00'),
+        date: new Date('07/08/2017 03:00'),
         stage: BOX,
     },
     {

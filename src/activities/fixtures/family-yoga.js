@@ -1,4 +1,4 @@
-import image from '../images/family-yoga.jpg'
+import image from '../images/family-yoga.png'
 
 export const photo = image
 
