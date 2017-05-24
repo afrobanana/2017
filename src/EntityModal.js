@@ -6,8 +6,10 @@ import Row from 'react-bootstrap/lib/Row'
 
 export default class EntityModal extends PureComponent {
     componentDidUpdate() {
-        const modal = document.querySelector('.modal')
-        modal.scrollTop = 0
+        setTimeout(() => {
+            const modal = document.querySelector('.modal')
+            modal.scrollTop = 0
+        }, 10)
     }
 
     render() {
@@ -16,7 +18,7 @@ export default class EntityModal extends PureComponent {
         return (
             <Modal
                 show={ true }
-                keyboard={ false }
+                keyboard={ true }
                 onHide={ goBack }
                 className={ className }>
                 <Modal.Header closeButton>

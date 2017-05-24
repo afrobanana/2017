@@ -24,6 +24,17 @@ class App extends PureComponent {
         this.goHome = this.goHome.bind(this)
     }
 
+    componentDidMount() {
+        const { history } = this.props
+        this.stopTracking = history.listen((location, action) => {
+            window.capture('pageview', `${location.pathname}${location.search}${location.hash}`);
+        })
+    }
+
+    componentWillUnmount() {
+        this.stopTracking()
+    }
+
     goHome() {
         const history = this.props.history
         history.push('/')
@@ -92,6 +103,11 @@ class App extends PureComponent {
             <a name="about" className="section-break">&nbsp;</a>
             <About/>
             <Tickets/>
+            <p className="copyright">
+                Copyright &copy; 2011 &mdash; 2017 Alternative Brains Rule
+                <br/>
+                <a href="https://github.com/afrobanana/2017"><small>version 1.2.0</small></a>
+            </p>
           </section>
         );
     }

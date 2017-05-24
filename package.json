@@ -1,9 +1,9 @@
 {
   "name": "2017-dev",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "author": "rudasn@gmail.com",
   "private": true,
-  "homepage": "https://2017.afrobananarepublic.com",
+  "homepage": "https://www.afrobananarepublic.com",
   "dependencies": {
     "bootstrap": "^3.3.7",
     "lodash": "^4.17.4",

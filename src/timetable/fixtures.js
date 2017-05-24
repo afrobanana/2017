@@ -19,7 +19,7 @@ export const ACTIVITIES = {
     displayOrder: 4
 }
 export const KIDS_ACTIVITIES = {
-    name: 'Kids Innovation',
+    name: 'Kid\'s Innovation',
     displayOrder: 5
 }
 
@@ -49,11 +49,6 @@ export default [
         date: new Date('07/08/2017 02:00'),
         stage: SQUARE,
     },
-    {
-        id: 'END',
-        date: new Date('07/08/2017 03:00'),
-        stage: SQUARE,
-    },
 
     {
         id: 'koulla',
@@ -80,11 +75,6 @@ export default [
         date: new Date('07/08/2017 00:30'),
         stage: WOODS,
     },
-    {
-        id: 'END',
-        date: new Date('07/08/2017 02:00'),
-        stage: WOODS,
-    },
 
     {
         id: 'kineza',
@@ -104,11 +94,6 @@ export default [
     {
         id: 'cusack',
         date: new Date('07/08/2017 03:00'),
-        stage: BOX,
-    },
-    {
-        id: 'END',
-        date: new Date('07/08/2017 05:00'),
         stage: BOX,
     },
 
@@ -163,11 +148,6 @@ export default [
         date: new Date('07/09/2017 02:30'),
         stage: SQUARE,
     },
-    {
-        id: 'END',
-        date: new Date('07/09/2017 04:30'),
-        stage: SQUARE,
-    },
 
     {
         id: 'pikatillis',
@@ -194,11 +174,6 @@ export default [
         date: new Date('07/09/2017 02:00'),
         stage: WOODS,
     },
-    {
-        id: 'END',
-        date: new Date('07/09/2017 03:00'),
-        stage: WOODS,
-    },
 
     {
         id: 'aristodemos',
@@ -220,20 +195,10 @@ export default [
         date: new Date('07/09/2017 04:00'),
         stage: BOX,
     },
-    {
-        id: 'END',
-        date: new Date('07/09/2017 0:00'),
-        stage: BOX,
-    },
 
     {
         id: 'agathokleous',
         date: new Date('07/08/2017 19:00'),
-        stage: HILL,
-    },
-    {
-        id: 'END',
-        date: new Date('07/08/2017 20:30'),
         stage: HILL,
     },
 
@@ -313,11 +278,6 @@ export default [
         date: new Date('07/09/2017 15:30'),
         stage: SQUARE,
     },
-    {
-        id: 'END',
-        date: new Date('07/09/2017 17:30'),
-        stage: SQUARE,
-    },
 
     {
         id: 'sugarcane',
@@ -337,11 +297,6 @@ export default [
     {
         id: 'anchorsong',
         date: new Date('07/09/2017 21:30'),
-        stage: WOODS,
-    },
-    {
-        id: 'END',
-        date: new Date('07/09/2017 23:00'),
         stage: WOODS,
     },
 

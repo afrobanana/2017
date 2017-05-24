@@ -24,7 +24,7 @@ export default class Guide extends PureComponent {
                         </p>
                     </div>
                     <div className="box">
-                        <h3>Daily Activities</h3>
+                        <h3>Daytime Activities</h3>
                         <p>Kids can also be a part of the fun with a special area set up especially for young ones where fun, education and innovation will come together in creative workshops. And for all those adults looking to relax and unwind, there will be plenty of wellness activities to enjoy, including yoga and Tai chi.</p>
                         <p>There will also be inspirational talks to enjoy, with Open Mic sessions and giving you the chance to share your thoughts. Geodesic domes on site will be encouraging community practices as festival-goers get the chance to charge mobile phones and enjoy collective festival mix tapes made for sharing.  And when things heat up a little? Cooling stations should do the trick!</p>
                     </div>

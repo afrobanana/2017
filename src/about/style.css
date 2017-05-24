@@ -1,6 +1,3 @@
-.about .box {
-    width: 400px;
-}
 .about .box:last-child {
     background-color: inherit;
     text-align: right;
