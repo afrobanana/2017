@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom'
 
 import Thumbnail from '../Thumbnail'
 
-import './style.css'
 import mapImg from './images/map.png'
 
 export default class Guide extends PureComponent {
+
     render() {
         return (
             <section className="guide">

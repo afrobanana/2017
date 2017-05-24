@@ -13,10 +13,10 @@ dd + dt {
   margin-top: 16px;
 }
 h1 {
-  font-size: 4em;
   font-family: 'Baloo Bhaina', sans-serif;
-  margin: 20px 0 0 0;
+  font-size: 4em;
   line-height: 1;
+  margin: 20px 0 0 0;
 }
 h2, h3 {
   font-family: 'Hammersmith One', sans-serif;
@@ -51,17 +51,17 @@ dl:last-child, p:last-child {
     background-color: rgba(255,255,255,0.3);
     box-sizing: border-box;
     margin: 0 16px 16px 0;
-    width: 300px;
     padding: 16px;
     position: relative;
+    width: 300px;
 }
 .box h2,
 .box h3 {
-    text-shadow: 0 0 2px #fff;
     background-color: rgba(255,255,255,0.5);
     margin: -16px -16px 16px -16px;
     padding: 10px 16px;
     text-align: center;
+    text-shadow: 0 0 2px #fff;
 }
 .modal-title {
     font-weight: 600;

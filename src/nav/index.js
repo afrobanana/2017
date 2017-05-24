@@ -3,8 +3,8 @@ import Navbar from 'react-bootstrap/lib/Navbar'
 
 import './style.css'
 import FB from './images/fb.svg'
-import Twitter from './images/twitter.svg'
 import Instagram from './images/instagram.svg'
+import Twitter from './images/twitter.svg'
 
 export default class TopNavBar extends PureComponent {
     constructor(props) {
@@ -33,6 +33,7 @@ export default class TopNavBar extends PureComponent {
 
     render () {
         const { expanded } = this.state
+
         return (
             <Navbar
                 expanded={ expanded }

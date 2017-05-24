@@ -1,7 +1,7 @@
+import React from 'react'
 import Col from 'react-bootstrap/lib/Col'
 import Grid from 'react-bootstrap/lib/Grid'
 import Modal from 'react-bootstrap/lib/Modal'
-import React from 'react'
 import Row from 'react-bootstrap/lib/Row'
 
 export default ({ title, body, previous, next, className, goBack }) => (

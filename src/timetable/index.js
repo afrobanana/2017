@@ -1,11 +1,11 @@
+import React, { PureComponent } from 'react'
 import groupBy from 'lodash/groupBy'
 import moment from 'moment'
-import React, { PureComponent } from 'react'
 
 import './style.css'
 import timetableSlots, { ACTIVITIES, KIDS_ACTIVITIES } from './fixtures'
-import { ArtistLink, getArtistById } from '../artists'
 import { ActivityLink, getActivityById } from '../activities'
+import { ArtistLink, getArtistById } from '../artists'
 
 export const dateHeading = (date) =>
     (parseInt(moment(date).format('H'), 10) < 7 ?
@@ -53,6 +53,7 @@ class Timetable extends PureComponent {
         const isActivity = stage === ACTIVITIES.name ||
                 stage === KIDS_ACTIVITIES.name
         const type = isActivity ? 'activity' : 'artist'
+
         return (
             <div key={ key } className={ `box ${ type }` }>
                 <h3>{ stage }</h3>
@@ -79,7 +80,6 @@ class Timetable extends PureComponent {
     }
 
     render() {
-
 
         return (
             <section className="timetable">

@@ -6,6 +6,7 @@ import './style.css'
 import directionsImg from './images/directions.png'
 
 export default class Directions extends PureComponent {
+
     render() {
         return (
             <section className="directions">

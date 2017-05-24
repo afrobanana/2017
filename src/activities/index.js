@@ -6,7 +6,6 @@ import EntityModal from '../EntityModal'
 import timetableSlots from '../timetable/fixtures'
 import { dateHeading, dateTime } from '../timetable'
 
-import './style.css'
 import activities from './fixtures'
 
 const parseText = (str) =>

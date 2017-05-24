@@ -2,9 +2,9 @@ import React from 'react'
 import Markdown from 'react-markdown'
 import { Link } from 'react-router-dom'
 
+import EntityModal from '../EntityModal'
 import timetableSlots from '../timetable/fixtures'
 import { dateHeading, dateTime } from '../timetable'
-import EntityModal from '../EntityModal'
 
 import './style.css'
 import artists from './fixtures'

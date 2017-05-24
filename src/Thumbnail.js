@@ -1,10 +1,10 @@
 import React, { PureComponent } from 'react'
 
 const THUMBNAIL_STYLE = {
-    position: 'relative',
-    overflow: 'hidden',
     height: '300px',
     lineHeight: 1,
+    overflow: 'hidden',
+    position: 'relative',
 }
 const THUMBNAIL_IMAGE_STYLE = {
     left: '50%',
@@ -25,6 +25,7 @@ const getThumbnailImageStyle = ({ offset = [0, 0]}) => {
 }
 
 export default class Thumbnail extends PureComponent {
+
     render() {
         const { children, offset } = this.props
         return (

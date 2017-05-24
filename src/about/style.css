@@ -2,8 +2,8 @@
     width: 400px;
 }
 .about .box:last-child {
-    text-align: right;
     background-color: inherit;
+    text-align: right;
 }
 .sponsors {
     text-align: center;

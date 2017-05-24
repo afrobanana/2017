@@ -1,5 +1,5 @@
-import Modal from 'react-bootstrap/lib/Modal'
 import React, { PureComponent } from 'react'
+import Modal from 'react-bootstrap/lib/Modal'
 import Sticky from 'react-stickynode';
 import { Switch, Route, } from 'react-router-dom'
 import { withRouter } from 'react-router'
@@ -15,8 +15,8 @@ import Landing from './landing'
 import Nav from './nav'
 import Tickets from './tickets'
 import Timetable from './timetable'
-import { ArtistModal } from './artists'
 import { ActivityModal } from './activities'
+import { ArtistModal } from './artists'
 
 class App extends PureComponent {
     constructor(props) {
@@ -30,6 +30,7 @@ class App extends PureComponent {
     }
 
     render() {
+
         return (
           <section className="abr">
             <Sticky>

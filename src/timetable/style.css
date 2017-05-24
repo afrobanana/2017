@@ -14,3 +14,8 @@
 .timetable .entry a {
     color: #000;
 }
+
+.timetable .entry a em {
+    font-size: 0.8em;
+    font-style: normal;
+}
