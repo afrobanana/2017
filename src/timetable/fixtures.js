@@ -83,7 +83,7 @@ export default [
     },
     {
         id: 'danlo',
-        date: new Date('07/08/2017 23:00'),
+        date: new Date('07/07/2017 23:00'),
         stage: BOX,
     },
     {

@@ -21,7 +21,7 @@ export default () =>
             <dt>GSKCY</dt>
             <dd>A healthy version for the Gyros lovers with a twist. Made with love and consciousness.</dd>
 
-            <dt>Red Track</dt>
+            <dt>Red Truck</dt>
             <dd>These friendly ‘mothertruckers’ will be serving up their super popular juicy burgers for an instant energy boost.</dd>
 
             <dt>Karozzeria</dt>

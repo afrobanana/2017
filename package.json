@@ -22,15 +22,17 @@
     "imagemin-jpeg-recompress": "^5.1.0",
     "imagemin-pngquant": "^5.0.0",
     "node-serve": "0.0.3",
-    "react-scripts": "1.0.3"
+    "react-scripts": "1.0.3",
+    "sharp": "^0.17.3"
   },
   "scripts": {
-    "build": "npm run fixtures && react-scripts build && npm run optimize",
+    "build": "npm run fixtures && react-scripts build && npm run resize && npm run optimize",
     "deploy": "npm run build && npm run push",
     "eject": "react-scripts eject",
     "fixtures": "node bin/fixtures.js",
     "optimize": "node bin/optimize.js",
     "push": "NODE_DEBUG=gh-pages node bin/deploy",
+    "resize": "node bin/resize",
     "serve": "npm run build && cd build && node ../node_modules/node-serve",
     "start": "npm run fixtures && react-scripts start",
     "test": "react-scripts test --env=jsdom"
