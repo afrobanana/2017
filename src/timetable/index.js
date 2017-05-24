@@ -35,7 +35,9 @@ class Timetable extends PureComponent {
             <div key={ key } className="box-container">
                 <h2 className="timetable-day-heading">{ day }</h2>
                 {
-                    Object.keys(stages).map((stage, i) =>
+                    Object.keys(stages).sort((a, b) =>
+                        stages[a][0].stage.displayOrder < stages[b][0].stage.displayOrder ? -1 : 1
+                    ).map((stage, i) =>
                         this.renderStage({
                             stage,
                             slots: stages[stage],

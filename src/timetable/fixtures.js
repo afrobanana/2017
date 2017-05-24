@@ -108,7 +108,7 @@ export default [
     },
     {
         id: 'END',
-        date: new Date('07/08/2017 06:00'),
+        date: new Date('07/08/2017 05:00'),
         stage: BOX,
     },
 
@@ -222,7 +222,7 @@ export default [
     },
     {
         id: 'END',
-        date: new Date('07/09/2017 06:00'),
+        date: new Date('07/09/2017 0:00'),
         stage: BOX,
     },
 
