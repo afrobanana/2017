@@ -1,15 +1,48 @@
 import React, { PureComponent } from 'react'
 import Navbar from 'react-bootstrap/lib/Navbar'
+import NavItem from 'react-bootstrap/lib/NavItem'
+import Nav from 'react-bootstrap/lib/Nav'
+import LinkContainer from 'react-router-bootstrap'
 
 import './style.css'
-import FB from '../images/fb.svg'
-import Twitter from '../images/twitter.svg'
-import Instagram from '../images/instagram.svg'
+import FB from './images/fb.svg'
+import Twitter from './images/twitter.svg'
+import Instagram from './images/instagram.svg'
 
 export default class TopNavBar extends PureComponent {
+    constructor(props) {
+        super(props)
+        this.handleClick = this.handleClick.bind(this)
+        this.onToggle = this.onToggle.bind(this)
+        this.state = {
+            expanded: false
+        }
+    }
+
+    handleClick(e) {
+        const { expanded } = this.state
+        if (expanded) {
+            this.setState({
+                expanded: !expanded
+            })
+        }
+    }
+
+    onToggle(expanded) {
+        this.setState({
+            expanded,
+        })
+    }
+
     render () {
+        const { expanded } = this.state
         return (
-            <Navbar fluid collapseOnSelect className="navigation">
+            <Navbar
+                expanded={ expanded }
+                onToggle={ this.onToggle }
+                onClick={ this.handleClick }
+                fluid
+                className="navigation">
                 <Navbar.Header>
                     <Navbar.Brand>
                         <a href="/">ABR <sup>2017</sup></a>
@@ -19,10 +52,10 @@ export default class TopNavBar extends PureComponent {
 
                 <Navbar.Collapse>
                     <ul className="nav navbar-nav">
-                        <li>
+                        <li role="presentaion">
                             <a href="#timetable">Timetable</a>
                         </li>
-                        <li>
+                        <li role="presentaion">
                             <a href="#guide">Guide</a>
                         </li>
                         <li>
