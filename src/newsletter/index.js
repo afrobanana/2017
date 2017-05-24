@@ -12,7 +12,7 @@ export default () => (
         className="newsletter"
         method="post"
         target="_blank"
-        action="http://afrobananarepublic.us5.list-manage2.com/subscribe/post?u=f58ce58e822a97a9cbfcef2e2&amp;id=79ef686f01">
+        action="//afrobananarepublic.us5.list-manage2.com/subscribe/post?u=f58ce58e822a97a9cbfcef2e2&amp;id=79ef686f01">
 
         <FormGroup>
             <InputGroup>

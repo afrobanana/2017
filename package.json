@@ -3,7 +3,7 @@
   "version": "1.1.0",
   "author": "rudasn@gmail.com",
   "private": true,
-  "homepage": "http://2017.afrobananarepublic.com",
+  "homepage": "https://2017.afrobananarepublic.com",
   "dependencies": {
     "bootstrap": "^3.3.7",
     "lodash": "^4.17.4",
@@ -31,7 +31,7 @@
     "fixtures": "node bin/fixtures.js",
     "optimize": "node bin/optimize.js",
     "push": "NODE_DEBUG=gh-pages node bin/deploy",
-    "serve": "cd build && node ../node_modules/node-serve",
+    "serve": "npm run build && cd build && node ../node_modules/node-serve",
     "start": "npm run fixtures && react-scripts start",
     "test": "react-scripts test --env=jsdom"
   }

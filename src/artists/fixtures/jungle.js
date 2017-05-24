@@ -4,7 +4,7 @@ export const url = 'http://bit.ly/JUNGLEBYNIGHT'
 export const photo = image
 
 // Markdown fields
-export const name = 'JUNGLE BY NIGHT (LIVE)'
+export const name = 'JUNGLE BY NIGHT *(LIVE)*'
 export const genres = '*TROPICALIA*'
 export const text = `
 This world renowned Amsterdam band has turned countless dance floors into boiler rooms: from Istanbul to Tokyo and from Paris to the isle of Vlieland, nobody can withstand their afro beats, ethiobreaks, Turkish psych and spicy cumbia. Their latest album, The Traveller, takes the journey deep into the jungle and an unknown world with keys and horns taking the lead.

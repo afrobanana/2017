@@ -1,6 +1,6 @@
 {
   "short_name": "AfroBanana",
-  "name": "2017 Afro Banana",
+  "name": "2017 Afro Banana July 7, 8 & 9 @ Kornos Forest",
   "icons": [
     {
       "src": "favicon.ico",
@@ -10,6 +10,6 @@
   ],
   "start_url": "./index.html",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#444fa1",
+  "background_color": "#6BCAF1"
 }

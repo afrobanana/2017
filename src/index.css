@@ -44,13 +44,13 @@ dl:last-child, p:last-child {
 .box-container {
     display: flex;
     flex-wrap: wrap;
-    margin: 16px 0;
+    margin: 16px -16px 16px 0;
 }
 .box {
     background-color: rgba(255,255,255,0.3);
     box-sizing: border-box;
     margin: 0 16px 16px 0;
-    width: 310px;
+    width: 300px;
     padding: 16px;
     position: relative;
 }

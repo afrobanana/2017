@@ -1,8 +1,5 @@
 import React, { PureComponent } from 'react'
 import Navbar from 'react-bootstrap/lib/Navbar'
-import NavItem from 'react-bootstrap/lib/NavItem'
-import Nav from 'react-bootstrap/lib/Nav'
-import LinkContainer from 'react-router-bootstrap'
 
 import './style.css'
 import FB from './images/fb.svg'
@@ -52,19 +49,19 @@ export default class TopNavBar extends PureComponent {
 
                 <Navbar.Collapse>
                     <ul className="nav navbar-nav">
-                        <li role="presentaion">
+                        <li role="presentation">
                             <a href="#timetable">Timetable</a>
                         </li>
-                        <li role="presentaion">
+                        <li role="presentation">
                             <a href="#guide">Guide</a>
                         </li>
-                        <li>
+                        <li role="presentation">
                             <a href="#location">Location</a>
                         </li>
-                        <li>
+                        <li role="presentation">
                             <a href="#about">About</a>
                         </li>
-                        <li className="tickets">
+                        <li  role="presentation" className="tickets">
                             <a href="http://abr.ticket.com.cy/event/page/1"
                                className="btn"
                                target="_blank"
@@ -72,9 +69,9 @@ export default class TopNavBar extends PureComponent {
                                Tickets
                             </a>
                         </li>
-                        <li className="social"><a href="https://www.facebook.com/TheAfroBananaRepublic" target="_blank" rel="noopener noreferrer"><img src={ FB } alt=""/></a></li>
-                        <li className="social"><a href="https://twitter.com/afrobananarpb" target="_blank" rel="noopener noreferrer"><img src={ Twitter } alt=""/></a></li>
-                        <li className="social"><a href="https://www.instagram.com/afrobananarpbc/" target="_blank" rel="noopener noreferrer"><img src={ Instagram } alt=""/></a></li>
+                        <li role="presentation" className="social"><a href="https://www.facebook.com/TheAfroBananaRepublic" target="_blank" rel="noopener noreferrer"><img src={ FB } alt=""/></a></li>
+                        <li role="presentation" className="social"><a href="https://twitter.com/afrobananarpb" target="_blank" rel="noopener noreferrer"><img src={ Twitter } alt=""/></a></li>
+                        <li role="presentation" className="social"><a href="https://www.instagram.com/afrobananarpbc/" target="_blank" rel="noopener noreferrer"><img src={ Instagram } alt=""/></a></li>
                     </ul>
                 </Navbar.Collapse>
             </Navbar>

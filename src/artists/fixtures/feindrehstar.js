@@ -4,7 +4,7 @@ export const url = 'http://bit.ly/FEINDREHSTAR'
 export const photo = image
 
 // Markdown fields
-export const name = 'Feindrehstar *(LIVE)*'
+export const name = 'FEINDREHSTAR *(LIVE)*'
 export const genres = '*BALKAN* *ELECTRO-FUNK*'
 export const text = `
 Imagine a seven-headed rhythmic beast with a percussionist, drummer, bassist, keyboardist, two horn players, and a DJ up on the stage embracing the musical totality of the world without any folklore kitsch, breaking down barriers between musical genres. Welcome to the wonderful world of Feindrehstar!

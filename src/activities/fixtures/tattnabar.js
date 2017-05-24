@@ -3,7 +3,7 @@ import image from '../images/tattna-bar.png'
 export const photo = image
 
 // Markdown fields
-export const name = 'TAT-TNABAR: RECYCLABLE MUSICAL INSTRUMENTS'
+export const name = 'TAT-TNABAR: Recyclable musical instruments'
 export const text = `
 What do you classify as a ‘musical instrument’? Are you willing to think outside the box? Musician Lefteris Moschovias (founder of the well-known Tat-Tnabar) will be showing music loving crowds at the ABR Festival how to unleash their creative spirit and make instruments out of a whole range of unusual items and recycled goods.
 

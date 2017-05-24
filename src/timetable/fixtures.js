@@ -19,13 +19,13 @@ export const ACTIVITIES = {
     displayOrder: 4
 }
 export const KIDS_ACTIVITIES = {
-    name: 'Kids Activities',
+    name: 'Kids Innovation',
     displayOrder: 5
 }
 
 export default [
     {
-        id: 'ABR Radio',
+        id: 'ABR RADIO',
         date: new Date('07/07/2017 14:00'),
         stage: SQUARE,
     },
