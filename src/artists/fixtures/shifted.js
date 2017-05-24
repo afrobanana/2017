@@ -4,7 +4,7 @@ export const url = ''
 export const photo = image
 
 // Markdown fields
-export const name = 'SHIFTED *(DJ SET)*'
+export const name = 'SHIFTED *(UK)* *(DJ SET)*'
 export const genres = '*TECHNO*'
 export const text = `
 Following the dissolution of his esteemed Commix group, Shifted (Guy Brewer) uprooted his UK drum n bass beginnings and set up base in Berlin. From his debut on Luke Slater's ‘Mote Evolver’ label, to Dominick Fernow's ‘Bed Of Nails’ and his recent recordings for his own smartly curated imprint, ‘Avian’, Brewer's work colours outside purist lines, pushing boundaries and provoking thought in a call to progressive techno, electronic, noise and experimental music.

@@ -86,6 +86,8 @@ class Timetable extends PureComponent {
                 <h1>Timetable</h1>
                 <p>
                     <strong>Gates open:</strong> Friday 7<sup>th</sup> at 14:00
+                    &nbsp;
+                    <strong>Gates close:</strong> Sunday 9<sup>th</sup> at 23:00
                 </p>
                 { this.renderDays() }
             </section>

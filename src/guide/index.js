@@ -44,7 +44,7 @@ export default class Guide extends PureComponent {
                         <Link to="/guide/environment" className="btn btn-primary">Health &amp; Safety</Link>
                     </div>
                     <div className="box">
-                        <h3>Food &amp; Drinks</h3>
+                        <h3>Food &amp; Drink</h3>
                         <p>Whether you’re after breakfast, lunch or dinner, a whole team of happy cooks will be on hand throughout the duration of the event to curb your hunger pangs and satiate your taste buds with a range of sweet and savoury delights. With a greater variety of food than ever before, select eateries and street food vendors will be catering to your every need from morning to night.</p>
                         <Link to="/guide/menu" className="btn btn-primary">Learn More</Link>
                     </div>

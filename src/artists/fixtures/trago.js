@@ -4,7 +4,7 @@ export const url = 'http://bit.ly/TOMTRAGO'
 export const photo = image
 
 // Markdown fields
-export const name = 'TOM TRAGO *(DJ SET)*'
+export const name = 'TOM TRAGO *(NL)* *(DJ SET)*'
 export const genres = '*HOUSE*'
 export const text = `
 An internationally renowned DJ, producer, live performer and label owner with three critically acclaimed albums to his name, the Dutchman divides his time between all-day studio sessions, DJ gigs and live shows all over the world, accentuated steady stream of musical collaborations. His trademark style blends the best of three decades of dance music – disco, boogie, synth funk, Detroit techno and more – with insatiable house rhythms and an intrinsic grasp of what makes dancefloors tick.

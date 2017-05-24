@@ -4,7 +4,7 @@ export const url = 'http://bit.ly/SOWETO'
 export const photo = image
 
 // Markdown fields
-export const name = 'SOWETO KINCH *(LIVE)*'
+export const name = 'SOWETO KINCH *(UK)* *(LIVE)*'
 export const genres = '*JAZZ* *RAP* *SPOKEN WORD*'
 export const text = `
 “Kicks pure Jazz and authentic rap into a brave new world,” proclaims the UK’S Guardian. And it’s certainly no overstatement! Soweto Kinch is a multi award-winning saxophonist, MC and composer specialising in a trademark style of jazz, rap and the spoken word unlike that of any other performer in the world.
