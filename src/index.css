@@ -11,6 +11,15 @@ img {
 dd + dt {
   margin-top: 16px;
 }
+h1 {
+  font-size: 4em;
+  font-family: 'Baloo Bhaina', cursive;
+  margin: 20px 0 0 0;
+  line-height: 1;
+}
+h2, h3 {
+  font-family: 'Hammersmith One', sans-serif;
+}
 dt, h1, h2, h3, h4 {
   color: rgb(68, 79, 161);
   text-transform: uppercase;
@@ -26,7 +35,7 @@ dl:last-child, p:last-child {
 }
 .section-break {
     display: block;
-    padding-bottom: 3em;
+    padding-bottom: 1.6em;
 }
 .sticky-inner-wrapper {
     z-index: 1
