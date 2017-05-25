@@ -16,9 +16,9 @@ export default () =>
             <dd>We kindly ask you to pay the utmost respect to the nature around you at the festival. Please leave no traces behind, keep the site clean, and separate your rubbish as the ABR team have made special arrangements for recycling after the festival. </dd>
 
             <dt>LITTER & DESIGNATED BINS</dt>
-            <dd>Labelled bins will be clearly marked on site. Please throw all litter in the designated bins, and not behind the trees, in the forest or anywhere else. Bins will be located all around the festival grounds, with distinct signs for rubbish separation. Please take special care to throw your cigarette butts in the designated bins and NOT on the beautiful festival grounds.</dd>
+            <dd>On-site bins will be clearly labelled. Please throw all litter in the designated bins, and not behind the trees, in the forest or anywhere else. Bins will be located all around the festival grounds, with distinct labels for rubbish separation. Please take special care to throw your cigarette butts in the designated bins and NOT on the beautiful festival grounds.</dd>
 
             <dt>DRINKING WITHOUT WASTE</dt>
-            <dd>In an attempt to eliminate waste, reusable collectible branded cups (40cl) will be available at the festival for 1 euro.</dd>
+            <dd>In an effort to minimize waste, reusable collectible branded cups (40cl) will be available at the festival for 1 euro.</dd>
         </dl>
     </section>
