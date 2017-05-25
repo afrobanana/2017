@@ -20,7 +20,7 @@ export default () =>
         <dd>
             <ul>
                 <li>Turn off taps and showers when finished.</li>
-                <li>Don't leave rubbish or your entire camping gear behind!</li>
+                <li>Don't leave rubbish or your camping gear behind!</li>
                 <li>Re-use your carrier bags.</li>
                 <li>Take recycling and rubbish bags with you and keep the campsite clean and tidy at all times.</li>
                 <li>No cooler boxes or drinks will be permitted onto any part of the festival site.</li>
