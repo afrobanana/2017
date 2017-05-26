@@ -11,7 +11,7 @@ Enter a magical world of capoeira with a taster class by Casquinha who is keen 
 
 **Duration:** 1.5 hour
 
-**Age Group:** 8 – adulthood (Children over the age of 8 are welcome to join in the fun as long as they are supervised by a responsible adult.)
+**Age Group:** 8 – adulthood ( Children over the age of 8 are welcome to join in the fun as long as they are supervised by a responsible adult. )
 `.trim()
 
 export default {

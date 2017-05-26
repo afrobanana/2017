@@ -20,7 +20,7 @@ export default class Directions extends PureComponent {
                     <div className="box">
                         <h2>PARKING</h2>
                         <p>Following the success of the festival bus last year, our lovely bus drivers will be ready to take you right up to the festival site! </p>
-                        <p>There will be heaps of space to park your car in a designated parking area that’s a three minutes drive away and a helpful team will be on hand to direct you there before you catch your FREE shuttle bus to the festival entrance.</p>
+                        <p>There will be heaps of space to park your car in a designated parking area that’s a three-minute drive away and a helpful team will be on hand to direct you there before you catch your FREE shuttle bus to the festival entrance.</p>
                         <p>When parking your car, keep your eyes peeled for the clearly labelled bus stop to board the festival shuttle bus.</p>
                     </div>
                     <div className="box">

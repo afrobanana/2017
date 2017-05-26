@@ -13,7 +13,7 @@ Young ones can travel deep into the magical world of stories with an interactive
 
 **Duration:** 1 hour
 
-**Age Group:** 6-12 yrs
+**Age Group:** 6-12
 `.trim()
 
 export default {
