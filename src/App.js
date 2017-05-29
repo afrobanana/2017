@@ -106,7 +106,9 @@ class App extends PureComponent {
             <p className="copyright">
                 Copyright &copy; 2011 &mdash; 2017 Alternative Brains Rule
                 <br/>
-                <a href="https://github.com/afrobanana/2017"><small>version 1.2.3</small></a>
+                <a href="https://github.com/afrobanana/2017">
+                    <small>{ process.env.REACT_APP_VERSION }</small>
+                </a>
             </p>
           </section>
         );
