@@ -1,14 +1,11 @@
 .directions-drive ol {
     padding: 0 0 0 1em;
 }
-.directions-drive .box {
-
+.maps {
+    flex-flow: nowrap;
 }
-.directions iframe {
-    pointer-events: none;
-}
-
-.directions iframe:active,
-.directions iframe:focus {
-    pointer-events: auto;
+.maps .box {
+    background: none;
+    padding: 0;
+    width: auto;
 }

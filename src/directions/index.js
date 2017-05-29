@@ -30,14 +30,22 @@ export default class Directions extends PureComponent {
                         <p>Bus stops will be clearly marked at both the parking area and festival entrance/exit.</p>
                     </div>
                 </div>
-                    <a
-                        href="https://www.google.com/maps/place/The+Afro+Banana+Republic+Festival/@34.87393,33.366545,11z/data=!4m5!3m4!1s0x0:0xbd7734f7a94bf975!8m2!3d34.902901!4d33.402487?hl=en-GB"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        style={{ display: 'inline-block' }}
-                        >
-                        <img width="1250px" src={ mapImg } alt="Google Map"/>
-                    </a>
+                <div className="maps box-container">
+                    <Thumbnail className="box" >
+                        <a
+                            href="https://www.google.com/maps/place/The+Afro+Banana+Republic+Festival/@34.87393,33.366545,11z/data=!4m5!3m4!1s0x0:0xbd7734f7a94bf975!8m2!3d34.902901!4d33.402487?hl=en-GB"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >
+                            <img src={ mapImg } alt="Google Map"/>
+                        </a>
+                    </Thumbnail>
+                    <Thumbnail className="box">
+                        <a href={ `${ directionsImg }` } target="_blank" rel="noopener noreferrer">
+                            <img src={ directionsImg } alt="directions"/>
+                        </a>
+                    </Thumbnail>
+                </div>
                 <div className="directions-drive box-container">
                     <div className="box">
                         <h3>From Nicosia</h3>
@@ -76,13 +84,6 @@ export default class Directions extends PureComponent {
                                 Crew assistants and signage will direct you to the Parking Area, Campers Drop-off or Campers Parking.
                             </li>
                         </ol>
-                    </div>
-                    <div className="box">
-                        <Thumbnail>
-                            <a href={ `${ directionsImg }` } target="_blank" rel="noopener noreferrer">
-                                <img src={ directionsImg } alt="directions"/>
-                            </a>
-                        </Thumbnail>
                     </div>
                 </div>
             </section>
