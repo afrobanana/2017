@@ -62,35 +62,6 @@
           ga('send', name, value);
         }
       }
-      function getId() {
-        var id;
-        if (typeof localStorage !== 'undefined') {
-          id = localStorage.getItem('abr2016uid');
-          if (!id) {
-            id = genId();
-            localStorage.setItem('abr2016uid', id);
-          }
-        }
-        else {
-          id = genId();
-        }
-        return '%REACT_APP_VERSION%-' + id;
-      }
-      function genId() {
-        var id = [Date.now()],
-            i;
-
-        i = 'abcdefghijklmnopqqrstuvwxyz0123456789'.split('');
-        i.sort(function(a, b) {
-          return Math.floor(Math.random() * 10) % 2 ? -1 : 1;
-        });
-        id.push(i.reduce(function(str, letter, i) {
-          return Math.floor(Math.random() * 10) % 2 ? str + letter :  str;
-        }, ''));
-
-        return id.join('-');
-      }
-      var USRID = getId();
     </script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -118,9 +89,8 @@
     })(window,document,window['_fs_namespace'],'script','user');
     </script>
     <script>
-      FS.identify(USRID, {
-        displayName: USRID,
-        version_str: '%REACT_APP_VERSION%',
+      FS.setUserVars({
+        version_str: '%REACT_APP_VERSION%'
       });
     </script>
   </body>
