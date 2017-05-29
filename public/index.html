@@ -74,7 +74,7 @@
         else {
           id = genId();
         }
-        return id;
+        return '%REACT_APP_VERSION%-' + id;
       }
       function genId() {
         var id = [Date.now()],
