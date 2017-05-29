@@ -1,7 +1,6 @@
 import image from '../images/40_VANESHA _P.png'
 
-
-export const url = 'http://bit.ly/ALP314'
+export const url = ''
 export const photo = image
 
 // Markdown fields
